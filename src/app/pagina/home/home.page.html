@@ -1,0 +1,298 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-menu-button slot="start" color="dark">
+    </ion-menu-button>
+    <ion-title color="dark">
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonTitle</ion-title>
+  </ion-toolbar>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonText:</ion-title>
+  </ion-toolbar>
+
+  <ion-text color="Dark">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla totam, deleniti quam assumenda labore praesentium rerum? Totam perspiciatis quas, minima suscipit temporibus eum? Quibusdam perspiciatis, exercitationem maxime explicabo doloribus nam.
+    </h1>
+  </ion-text>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonImg:</ion-title>
+  </ion-toolbar>
+
+  <ion-img src="https://img.odcdn.com.br/wp-content/uploads/2023/06/Relampagos-na-Turquia-1024x576.jpg"></ion-img>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonInput:</ion-title>
+  </ion-toolbar>
+
+  <ion-input type="text" placeholder="Ion Input"></ion-input>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonCheckbox:</ion-title>
+  </ion-toolbar>
+
+  <ion-checkbox>Homem</ion-checkbox>
+  <ion-checkbox>Mulher</ion-checkbox>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonList:</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Caneta</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Borracha</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Caderno</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cola</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonAlert:</ion-title>
+  </ion-toolbar>
+  
+  <ion-button id="present-alert">
+    Click me
+  </ion-button>
+  <ion-alert trigger="present-alert" header="Tiulo do alert" subHeader="Subtítulo do alert" message="Uma mensagem do alert"></ion-alert>
+
+  <ion-toolbar>
+    <ion-title>IonAccordeon:</ion-title>
+  </ion-toolbar>
+
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>Sobre Mim</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa repellendus libero cum commodi, saepe id quasi expedita nulla voluptas impedit provident tempore qui quisquam officia corrupti velit autem unde.</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>História com a programação</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa repellendus libero cum commodi, saepe id quasi expedita nulla voluptas impedit provident tempore qui quisquam officia corrupti velit autem unde.</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Conhecimentos</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum culpa repellendus libero cum commodi, saepe id quasi expedita nulla voluptas impedit provident tempore qui quisquam officia corrupti velit autem unde.</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonBadge</ion-title>
+  </ion-toolbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Likes</ion-label>
+      <ion-badge color="primary" mode="ios">21</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Curtidas</ion-label>
+      <ion-badge color="" mode="ios">10</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>Meságens</ion-label>
+      <ion-badge color="primary" mode="ios">3</ion-badge>
+    </ion-item>
+  </ion-list>
+
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonBreadcrumbs:</ion-title>
+  </ion-toolbar>
+
+  <ion-breadcrumbs>
+    <ion-breadcrumb href="/folder/inbox">Inbox</ion-breadcrumb>
+    <ion-breadcrumb href="/folder/favorites">Favorites</ion-breadcrumb>
+    <ion-breadcrumb href="/home">Home</ion-breadcrumb>
+  </ion-breadcrumbs>
+
+  <!-- ------------------------------------------------------------------------ -->
+   <ion-toolbar>
+    <ion-title>IonRippleEffect:</ion-title>
+   </ion-toolbar>
+
+   <div class="wrapper">  
+    <div class="ion-activatable ripple-parent rectangle">
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+  </div>
+  
+  <!-- ------------------------------------------------------------------------ -->
+   <ion-toolbar>
+    <ion-title>IonCards:</ion-title>
+   </ion-toolbar>
+
+   <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Subtítulo do card</ion-card-subtitle>
+      <ion-card-title>Título do card</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Conteúdo do card.
+    </ion-card-content>
+   </ion-card>
+
+  <!-- ------------------------------------------------------------------------ -->
+   <ion-toolbar>
+    <ion-title>IonCards Personalizado:</ion-title>
+   </ion-toolbar>
+
+   <ion-card class="ion-activatable">
+    <ion-card-header>
+      <ion-card-subtitle>Subtítulo do card</ion-card-subtitle>
+      <ion-card-title>Título do card</ion-card-title>
+    </ion-card-header>
+
+    <ion-ripple-effect></ion-ripple-effect>
+
+    <ion-card-content>
+      Conteúdo do card.
+    </ion-card-content>
+   </ion-card>
+
+   <!-- ------------------------------------------------------------------------ -->
+    <ion-toolbar>
+      <ion-title>IonChip:</ion-title>
+    </ion-toolbar>
+
+    <ion-chip>Padrão</ion-chip>
+    <ion-chip [disabled]="true">Desativado</ion-chip>
+    <ion-chip [outline]="true">Outline</ion-chip>
+
+    <ion-chip>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Avatar Chip</ion-label>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-label>Icon Chip</ion-label>
+    </ion-chip>
+
+   <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonDateTime:</ion-title>
+  </ion-toolbar>
+
+  <div class="ion-padding">
+    <ion-datetime display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+  </div>
+   
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>IonDateTime com limitação de data:</ion-title>
+  </ion-toolbar>
+
+  <div class="ion-padding">
+    <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"></ion-datetime>
+  </div>
+  
+  <!-- ------------------------------------------------------------------------ -->
+  <ion-toolbar>
+    <ion-title>Btn com IonDateTime:</ion-title>
+  </ion-toolbar>
+
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+
+  <!-- ------------------------------------------------------------------------ -->
+
+  <ion-toolbar>
+    <ion-title>IonPicker:</ion-title>
+  </ion-toolbar>
+
+  <ion-picker>
+    <ion-picker-column value="JS">
+      <ion-picker-column-option value="JAVA">JAVA</ion-picker-column-option>
+      <ion-picker-column-option value="JS" disabled="true">JS (disabled)</ion-picker-column-option>
+      <ion-picker-column-option value="TS">TS</ion-picker-column-option>
+      <ion-picker-column-option value="PHP">PHP</ion-picker-column-option>
+      <ion-picker-column-option value="PYTHON">PYTHON</ion-picker-column-option>
+      <ion-picker-column-option value="C++" disabled="true">C++ (disabled)</ion-picker-column-option>
+    </ion-picker-column>
+  </ion-picker>
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+  <!-- ------------------------------------------------------------------------ -->
+
+
+
+   
+  
+  <!-- End -->
+</ion-content>
