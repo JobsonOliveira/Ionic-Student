@@ -9,9 +9,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- <div [innerHTML] = "grafico"></div> -->
 
-  <ion-button (click)="request()" expand="block" fill="clear" shape="round">
-    Click me
-  </ion-button>
+  <ion-card>
+    <ion-card-title class="ion-padding-start">Awesome Title</ion-card-title>
+    <ion-card-content class="ion-margin-top" [ngClass] = "{'cardContent': below}">
+      <app-vertical-bar-chart [view]="view" [legendPosition] = "legendPosition"></app-vertical-bar-chart>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-title class="ion-padding-start">Awesome Title</ion-card-title>
+    <ion-card-content class="ion-margin-top" [ngClass] = "{'cardContent': below}">
+      <app-pie-grid-chart [view]="view" [legendPosition] = "legendPosition"></app-pie-grid-chart>
+    </ion-card-content>
+  </ion-card>
+
+
+  <div>
+    <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+      Click me
+    </ion-button>
+  </div>
+
 </ion-content>
