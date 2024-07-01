@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { PieGridChartComponent } from './pie-grid-chart.component';
+import { PieChartRamaisComponent } from './pie-chart.component';
 
-describe('PieGridChartComponent', () => {
-  let component: PieGridChartComponent;
-  let fixture: ComponentFixture<PieGridChartComponent>;
+describe('PieChartComponent', () => {
+  let component: PieChartRamaisComponent;
+  let fixture: ComponentFixture<PieChartRamaisComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PieGridChartComponent ],
+      declarations: [ PieChartRamaisComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PieGridChartComponent);
+    fixture = TestBed.createComponent(PieChartRamaisComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

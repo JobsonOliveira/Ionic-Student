@@ -26,10 +26,10 @@ import {
   heartDislike
 } from 'ionicons/icons';
 
-import { VerticalBarChartComponent } from 'src/app/components/vertical-bar-chart/vertical-bar-chart.component';
+// import { VerticalBarChartComponent } from 'src/app/components/vertical-bar-chart/vertical-bar-chart.component';
+import { PieChartComponent } from 'src/app/components/pie-chart/pie-chart.component';
 import { Platform } from '@ionic/angular';
 import { LegendPosition } from '@swimlane/ngx-charts';
-import { PieGridChartComponent } from 'src/app/components/pie-grid-chart/pie-grid-chart.component';
 
 @Component({
   selector: 'app-home',
@@ -45,8 +45,8 @@ import { PieGridChartComponent } from 'src/app/components/pie-grid-chart/pie-gri
     FormsModule,
     IonButton,
     IonMenuButton,
-    VerticalBarChartComponent,
-    PieGridChartComponent,
+    // VerticalBarChartComponent,
+    PieChartComponent,
     NgClass,
     IonCard,
     IonCardTitle,
@@ -63,6 +63,9 @@ export class HomePage implements OnInit {
   ngOnInit() {
     this.changeLegendPosition(false);
     this.handleScreenSizeChange();
+
+    const teste = document.getElementById('teste') as HTMLElement;
+    console.log(teste);
   }
 
   // Posição da legenda
@@ -84,14 +87,14 @@ export class HomePage implements OnInit {
 
     if(width > height) {
       this.view = [
-        0.9 * width,
-        0.9 * height
+        // 0.9 * width,
+        // 0.9 * height
       ];
     }
     else {
       this.view = [
-        0.95 * width,
-        0.35 * height
+        // 0.95 * width,
+        // 0.45 * height
       ];
     }
   }
